@@ -1,4 +1,5 @@
 #pragma comment(lib, "Ws2_32.lib")
+
 #define KEY_STATE_PRESSED  0x8000 
 #define CAPS_LOCK_ON       0x0001  
 
