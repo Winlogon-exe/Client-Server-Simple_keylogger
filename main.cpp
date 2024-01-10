@@ -1,3 +1,4 @@
+#pragma comment(lib, "Ws2_32.lib")
 #define KEY_STATE_PRESSED  0x8000 
 #define CAPS_LOCK_ON       0x0001  
 
@@ -11,7 +12,6 @@
 #include <iostream>
 #include <cctype>
 #include <unordered_map>
-#pragma comment(lib, "Ws2_32.lib")
 
 struct KeyboardSymbols
 {
