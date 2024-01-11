@@ -45,4 +45,4 @@ def handle_client(client_socket, addr, connected_clients):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    start_server("192.168.1.123", 5555)
+    start_server("localhost", port)
