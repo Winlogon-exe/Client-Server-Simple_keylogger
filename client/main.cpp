@@ -93,8 +93,8 @@ void sendDataToServer(const std::string& data)
     hints.ai_socktype = SOCK_STREAM;
     hints.ai_protocol = IPPROTO_TCP;
 
-#define SERVER_IP "213.222.226.234"
-#define SERVER_PORT "5555"
+#define SERVER_IP "ip"
+#define SERVER_PORT "port"
     int status = getaddrinfo(SERVER_IP, SERVER_PORT, &hints, &res);
 
     if (status != 0) {
